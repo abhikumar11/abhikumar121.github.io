@@ -30,7 +30,7 @@ app.use(
                maxAge: 1000 * 60 * 60,
           },
           store: mongostore.create({
-               mongoUrl: "mongodb://localhost:27017/placementcell",
+               mongoUrl: "mongodb+srv://abhi:abhi@cluster1.p6lnqsp.mongodb.net/?retryWrites=true&w=majority",
                autoRemove: "disabled",
           }),
           function(err) {

@@ -59,13 +59,13 @@ module.exports.csvreport = async function (req, res) {
                }
           }
           const datafile = fs.writeFile(
-               "uploads/studentsReport.csv",
+               "uploads/PlacementReport.csv",
                report,
                function (err, data) {
                     if (err) {
                          console.log(err);
                     }
-                    return res.download("uploads/PlacementReport.csv");
+                    return res.download("./uploads/PlacementReport.csv");
                      
                }
           );
